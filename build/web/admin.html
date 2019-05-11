@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="C:\Users\KARTIK\Desktop\bms1.css">
+        <style type="text/css">
+
+        body{
+            background: -webkit-linear-gradient(left, #ff4d88, #ff8c1a);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu{
+            background: #0059b3;
+            height: 600px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .menu-row{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .menu-icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .sub{
+            height: 150px;
+            width: 150px;
+            background-color: #aaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 4px solid #aaa;
+            flex-direction: column;
+        }
+
+        .sub:hover{
+            background: transparent;
+            color: #aaa;  
+            transition: 0.5s all ;
+            -webkit-transition: 0.5s all;
+            -moz-transition: 0.5s all;
+            -o-transition: 0.5s all;
+            -ms-transition: 0.5s all;
+        }
+
+        p{
+            color: #111;
+            font-size: 20px;
+        }
+
+        .img{
+            height: 60px;
+            width: 50px;
+        }
+
+        .img1{
+            height: 80px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        
+        .logout{
+            border: none;
+            padding: 20px;
+            width: 150px;
+            background-color: red;
+            color: white;
+            cursor: pointer
+        }
+        
+        .logout:hover{
+            background-color: transparent;
+            color: red;
+            border: solid 1px;
+        }    
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="menu">
+                <div class="menu-row">
+                    <div class="menu-icons">
+                        <a href="UserAdmin.jsp">
+                            <div class="sub">
+                                <img src="images/House-512.png" class="img">
+                                <p>User</p>
+                            </div>
+                        </a>            
+                    </div>
+                    <div class="menu-icons">
+                        <a href="BusAdmin.jsp">
+                            <div class="sub"> 
+                                <img src="images/schoolbus-512.png" class="img">
+                                <p>Buses</p>    
+                            </div>
+                        </a>    
+                    </div>  
+                </div>    
+                <div class="menu-row">
+                    <div class="menu-icons">
+                        <a href="DriverAdmin.jsp">
+                            <div class="sub">
+                                <img src="images/driver-safety-017-512.png" class="img">
+                                <p>Driver</p>
+                            </div>
+                        </a>            
+                    </div>
+                    <div class="menu-icons">
+                        <a href="RoutesAdmin.jsp">
+                            <div class="sub">
+                                <img src="images/img_10076.png" class="img">
+                                <p>Routes</p>
+                            </div>
+                        </a>    
+                    </div>    
+                </div>
+                <a href="logout.jsp" style="text-decoration:none;"><button class="logout">Logout</button></a>
+            </div>
+        </div>   
+    </body>
+</html>                

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                margin: 0;
+            }
+            
+            .main{
+                margin: 0;
+                display: flex;
+                display: block;
+                width:15.7%;
+                height: 100vh;
+                
+            }
+
+            .btn{
+                margin: 0;
+                border: none;
+                background-color: #003380;
+                padding: 15px;
+                width: 100%;
+                color: white;
+                cursor: pointer;
+                font-size: 25px;
+            }
+
+            .nav{ 
+                margin: 0;
+                z-index: 1;
+                height: 100%;
+                width: 0;
+                overflow-x: hidden;
+                transition: 0.5s;
+                position: fixed;
+            }
+            
+            .nav a{
+                display: flex;
+                background-color: #0039e6;
+                justify-content: space-around;
+                padding: 20px 14px;
+                color: white;
+                text-decoration: none;
+                width: 75.6%;
+            }
+            
+            .nav a:hover{
+                background-color: #aaa;
+                transition-duration: 2s;
+		        transform:translate(0px,-5px);
+		        box-shadow: 20px 10px 20px black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <button class="btn" onclick="fun()">Info</button>
+            <div class="nav" id="na">
+                <a href="#">Home</a>
+                <a href="#">Bus-Info</a>
+                <a href="#">Driver-Info</a>
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
+            </div>
+            <script type="text/javascript">
+                function fun() {
+                    document.getElementById("na").style.width = "250px";
+                }
+            </script>
+        </div>
+        <p>Login Successful<p>
+    </body>
+</html>

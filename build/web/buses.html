@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			.main{
+				height: 100vh;
+				background: -webkit-linear-gradient(left, #ff4d88, #ff8c1a);
+			}
+			.nav-side{
+				position: absolute;
+				background-color: #111;
+				opacity: 0;
+				height: 92.5%;
+				width: 20%;
+			}
+
+			.side{
+				position: absolute;
+				background-color: #ccc;
+				height: 92.5vh;
+				width: 10%;
+			}
+
+			.open-button{
+				background-color: #111;
+				width: 10%;
+				color: white;
+				border: 0;
+				cursor: pointer;
+				padding: 20px; 
+			}
+
+			.inside-nav{
+				background-color: #ccc;
+				border: 0;
+				cursor: pointer;
+				color: dodgerblue;
+				width: 100%;
+				padding: 20px;
+			}
+
+			.home{
+				background: #ccc;
+				
+				width: 100vw;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+			}
+
+			.home1{
+				background-color: red;
+				height: 600px;
+				width: 800px;
+				opacity: 0;
+				position: absolute;
+			}
+
+			.home2{
+				background-color: purple;
+				height: 600px;
+				width: 800px;
+				opacity: 0;
+				position: absolute;
+			}
+
+			.left{
+				float: left;
+				
+				width: 20%;
+			}
+
+			.right{
+				float: left;
+				background-color: #666;
+				width: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="left">
+				<button onclick="fun()" class="open-button" id="3">Open</button>
+				<div class="side" id="2">
+
+				</div>
+				<div class="nav-side" id="1">
+					<button class="inside-nav" onclick="fun2()">abc</button>
+					<button class="inside-nav" onclick="fun3()">def</button>
+					<button class="inside-nav">ghi</button>
+				</div>
+			</div>
+			<div class="right">
+				<div class="home">
+					<div class="home1" id="4"></div>
+					<div class="home2" id="5"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function fun() {
+				document.getElementById('1').style.opacity = 1;
+				document.getElementById('2').style.opacity = 0;
+				document.getElementById('3').style.width = "20%";
+			}
+
+			function fun2(){
+				document.getElementById('4').style.opacity = 1;
+			}
+
+			function fun3(){
+				document.getElementById('5').style.opacity = 1;
+			}
+		</script>
+	</body>	
+</html>

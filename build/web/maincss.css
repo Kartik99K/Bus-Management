@@ -1,0 +1,98 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 Jan, 2019, 3:26:43 PM
+    Author     : KARTIK
+*/
+
+    body{
+        margin:0;
+    }
+            
+    .main{
+        background-image:url("OUR-BUSES.jpg");
+	height:100vh;
+	background-size: cover;		
+	overflow: hidden; 
+    }
+    
+    .header{
+        color:#fff;
+        margin: auto;
+        font-size: 40px;
+        position: absolute;
+        top: -100px;
+        left: 450px;
+        animation-name: ani1;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+      
+    .header1{
+        color:#fff;
+        margin: auto;
+        font-size: 40px;
+        position: absolute;
+        top: -100px;
+        left: 650px;
+        animation-name: ani1;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes ani1{
+	0%{
+            top:-100px;
+	}
+				
+	100%{
+            top:45px;
+	}
+    }
+    
+    .sign{
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.4);
+        height: 430px;
+        width: 300px;
+        margin: auto;
+        opacity:0;
+        position: absolute;
+        top:150px;
+        left:600px;
+        color:white;
+        animation-name: ani2;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        border:none;
+    }
+            
+    @keyframes ani2{
+        0%{
+            opacity: 0;            
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    
+    .b1{
+        border:none;
+        color:white;
+        border-radius:20px;
+        padding: 5px 10px;
+        cursor:pointer;
+    }
+    
+    .p2{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+            body{
+                margin:0;
+            }
+            
+            .main{
+                background-image:url("images/OUR-BUSES.jpg");
+		height:100vh;
+		background-size: cover;		
+		overflow: hidden; 
+            }
+            
+            .header{
+                color:#0039e6;
+                margin: auto;
+                font-size: 40px;
+                position: absolute;
+                top: -100px;
+                left: 450px;
+                animation-name: ani1;
+                animation-duration: 2s;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+            }
+            
+            @keyframes ani1{
+		0%{
+                    top:-100px;
+		}
+				
+		100%{
+                    top:45px;
+		}
+            }
+            
+            .sign{
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0, 0.4);
+                height: 250px;
+                width: 300px;
+                margin: auto;
+                opacity:0;
+                position: absolute;
+                top:200px;
+                left:550px;
+                color:white;
+                animation-name: ani2;
+                animation-duration: 2s;
+                animation-delay: 3s;
+                animation-fill-mode: forwards;
+                box-shadow: 0px 0px 10px #333;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .sign:hover{
+                transition-duration: 2s;
+		transform:translate(0px,-5px);
+                box-shadow: 20px 10px 20px #aaa;
+            }
+            
+            @keyframes ani2{
+                0%{
+                    opacity: 0;
+                    
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            
+            .p1{
+                color:#ccffff;
+                font-size: 25px;
+                text-align: center;
+            }
+            
+            
+            .submit{
+                background-color: #0039e6;
+                color: #fff;
+                border: none;
+                padding: 5px 15px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            
+            .submit:hover{
+                box-shadow: 0px 0px 10px #fff;
+            }
+            
+            .d1{
+                opacity: 0;
+                animation-name:ani3;
+                animation-duration:2s;
+                animation-delay:5s;
+                animation-fill-mode:forwards; 
+            }
+            @keyframes ani3{
+                0%{
+                    opacity:0;
+                }
+                100%{
+                    opacity:1;
+                }
+            }
+            
+            .input{
+                border-radius: 10px;
+                width: 100%;
+                height:30px;
+                
+            }
+            
+            ::-webkit-input-placeholder {
+                font-size: 14px;
+                color:#595959;
+                text-transform: uppercase;
+                text-transform: uppercase;
+                text-align: center;
+                text-decoration: none;
+            }
+            
+            .slct{
+                width:70%;
+                border:none;
+                border-radius: 10px;
+                height: 20px;
+                color:balck;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <h1 class="header">Welcome to Bus Management System!</h1>
+            <div class="sign">
+                <div class="d1">
+                <form action="logservlet" method="POST">
+   
+                    <center><input type="text" name="uid" placeholder="Username" class="input"/></center><br/>
+                    <center><input type="password" name="pw" placeholder="Password" class="input"/></center><br>
+                    <center>
+                        <select class="slct">
+                            <option disabled>Select an option</option>
+                            <option>Student</option>
+                            <option>Staff</option>
+                            <option>Admin</option>
+                        </select>
+                    </center><br/>
+                    <center><input type="submit" class="submit"/></center>
+                </form>
+                 <!--   <a href="SignUp.html" style="text-decoration:none;"><center> <p style="color:white;">New User?Register Yourself here First!</p></center></a> -->
+                </div>
+                
+            </div>    
+        </div>
+    </body>
+</html>

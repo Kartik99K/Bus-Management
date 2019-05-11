@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="bms1.css">
+        <script type="text/javascript" src="C:\Users\KARTIK\Desktop\Section-A HTML\jquery-3.3.1.js">
+        
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $("#routes").click(function(){
+                $("#route").toggle();
+            })
+        });
+        </script>
+
+        <style type="text/css">
+
+        body{
+            background: -webkit-linear-gradient(left, #ff4d88, #ff8c1a);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            
+        }
+
+        .menu{
+            display: flex;      
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .menu-row{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .menu-icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .sub{
+            color: white;
+            height: 50px;
+            width: 150px;
+            background: -webkit-linear-gradient(left, #ff4d88, #ff8c1a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:2px solid #111;
+            flex-direction: column;
+        }
+
+        .sub:hover{
+            background: transparent;
+            color: #aaa;  
+            transition: 0.5s all ;
+            -webkit-transition: 0.5s all;
+            -moz-transition: 0.5s all;
+            -o-transition: 0.5s all;
+            -ms-transition: 0.5s all;
+        }
+
+        .admin-pages{
+            
+            height: 550px;
+            width: 850px;
+        }
+
+        .del-btn{
+            border: 0;
+            background-color: #cc0000;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .upt-btn{
+            border: 0;
+            background-color: #29a329;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none; 
+        }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="menu">
+                <div class="menu-row">
+                    <div class="menu-icons" id="">
+                        <a href="admin.html">
+                            <div class="sub">
+                                <button class="sub">Home</button>
+                            </div>
+                        </a>            
+                    </div>
+                    <div class="menu-icons">
+                        <a href="bus.html">    
+                                <div class="sub" id="bus"> 
+                                <button class="sub">Buses</button>     
+                            </div>
+                        </a>    
+                    </div>  
+                    <div class="menu-icons">
+                        <a href="driver.html">
+                            <div class="sub">
+                                <button class="sub">Driver</button>
+                            </div>
+                        </a>            
+                    </div>
+                    <div class="menu-icons">
+                        <a href="Routes.html">   
+                            <div class="sub">
+                                <button class="sub">Routes</button>
+                            </div>
+                        </a>    
+                    </div>    
+                </div>
+            </div><br><br>
+            <div class="admin-pages">
+                <div class="route">
+                    <table class="tbl1">
+                        <tr>
+                            <th>Bus No.</th>
+                            <th>Driver Name</th>
+                            <th>Driver Number</th>
+                            <th>Admin</th>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>abc</td>
+                            <td>123</td>
+                            <td>    
+                                <button class="del-btn">Delete</button>
+                                <button class="upt-btn">Update</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>def</td>
+                            <td>456</td>
+                            <td>
+                                <button class="del-btn">Delete</button>
+                                <button class="upt-btn">Update</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>ghi</td>
+                            <td>789</td>
+                            <td>
+                                <button class="del-btn">Delete</button>
+                                <button class="upt-btn">Update</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>104</td>
+                            <td>jkl</td>
+                            <td>159</td>
+                            <td>
+                                <button class="del-btn">Delete</button>
+                                <button class="upt-btn">Update</button>
+                            </td>
+                        </tr>    
+                    </table>
+                </div>
+            </div>    
+        </div>   
+    </body>
+</html>                
